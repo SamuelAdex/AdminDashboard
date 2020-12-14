@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header class="  ">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <div class="menu">
+              <a class="navbar-brand" href="index.html"><img src="./img/fashion.ico" class="img-fluid justify-center" alt=""> Admin</a>
+              <img src="./img/icons8_menu_squared_32.png" class="img-fluid" alt="" onclick="document.getElementById('panel').style.display='block'">
+            </div>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="./img/Image__334690_1548100087.jpeg" style="width: 30px; height:30px" alt="" class="img-fluid rounded-circle"> SamuelAdex</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="./img/icons8_notification.ico" alt="" class="img-fluid"><small><span class="badge badge-danger">32</span></small></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="./img/icons8_logout_rounded_left.ico" alt="" class="img-fluid"></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid row">
+            <!--Panel-->
+            <div class="col-md-2 bg-dark panel sticky-top" id="panel">
+              <div class="">
+                  <div class="">
+                      <img src="./img/userImg.png" alt="Logo" class="img-fluid float-left">
+                  </div> <h1 class="badge badge-light float-right" onclick="document.getElementById('panel').style.display='none'">X</h1>
+                  <div id="accordion">
+                    <div class="clearfix"></div>
+
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <a href="index.html">
+                          DashBoard
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                          <img src="./img/post.ico" alt="" class="img-fluid"> Posts
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="list-item"><a href="create_post.html"><img src="./img/create_16.png" alt="" class="img-fluid">Create Post</a></li><br>
+                                <li class="list-item"><a href="manage_post.html"><img src="./img/manage_16.png" alt="" class="img-fluid">Manage Post</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                          <img src="./img/icons8_sheets.ico" alt="" class="img-fluid">Category
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="list-item"><a href="create_cat.html"><img src="./img/create_16.png" alt="" class="img-fluid">Create Category</a></li><br>
+                                <li class="list-item"><a href="manage_cat.html"><img src="./img/manage_16.png" alt="" class="img-fluid"><small>Manage Category</small></a></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                            <img src="./img/user.ico" alt="" class="img-fluid">Users
+                          </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <ul class="list-unstyled">
+                                  <li class="list-item"><a href="create_user.html"><img src="./img/create_16.png" alt="" class="img-fluid">Create User</a></li><br>
+                                  <li class="list-item"><a href="manage_user.html"><img src="./img/manage_16.png" alt="" class="img-fluid">Manage User</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <div class="card-header">
+                          <a class="" href="privacy.html">
+                            <img src="./img/icons8_security_lock_16.png" alt="" class="img-fluid">Privacy & Policy
+                          </a>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div><br>
+            <!--End Panel-->
+
+            <!--content  -->
+            <div class="col-md-9">
+                <br><main>
+                    <div class="container">
+                        <h1>DashBoard</h1>
+                    
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <p>Users</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>110</h3>
+                                    </div>
+                                </div>
+                            </div><br>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-success">
+                                        <p>Posts</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>110</h3>
+                                    </div>
+                                </div>
+                            </div><br>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-warning">
+                                        <p>Category</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>110</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+
+                        <div class="table">
+                            <table class='table table-stripe table-border'>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Post</th>
+                                    <th>Category</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Samuel Adex</td>
+                                    <td>35</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Agent Smith</td>
+                                    <td>35</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Sammy Rage</td>
+                                    <td>35</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Victor</td>
+                                    <td>35</td>
+                                    <td>6</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!--End content  -->
+        </div>
+    </section>
+    
+
+
+
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

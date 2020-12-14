@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+}
+
+div .private img{
+    padding: 12px;
+    justify-content: center;
+}
+
+
+#accordion a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.panel{
+    height: 100vh;
+    overflow: scroll;
+}
+main{
+    background-color: white;
+    border-top: 4px solid #343A40;
+}
+.card{
+    box-shadow: 2px 3px 4px black;
+}
+.menu img{
+    height: 30px;
+}
+
+/* Post Page Styles */
+.filter{
+    display: flex;
+    padding: 12px;
+    margin: 0 auto;
+}
+.filter input{
+    width: 100%;
+}
+
+/*End Post Page Styles */
+
+@media screen and (max-width: 900px){
+    .panel{
+        display: none;
+    }
+    
+   .manage table, .btn{
+       width: 100%;
+       font-size: 9pt;
+       
+   }
+   .table{
+      overflow: scroll;
+   }
+   .filter{
+       display: block;
+       text-align: center;
+       padding: 8px;
+   }
+}

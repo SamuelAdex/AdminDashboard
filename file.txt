@@ -1,0 +1,128 @@
+<section>
+        <div class="">
+            <div class="row">
+                <!--Panel-->
+                <div class="col-md-2 ">
+                  <div class="bg-dark">
+                      <div class="">
+                          <img src="" alt="Logo" class="img-fluid">
+                      </div>
+                      <div id="accordion">
+
+                          <div class="card bg-dark">
+                            <div class="card-header">
+                              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                DashBoard
+                              </a>
+                            </div>
+                          </div>
+                        
+                          <div class="card bg-dark">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                  Posts
+                              </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <ul class="list-unstyled">
+                                      <li class="list-item"><a href="">Create Post</a></li><br>
+                                      <li class="list-item"><a href="">Manage Post</a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="card bg-dark">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                Category
+                              </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <ul class="list-unstyled">
+                                      <li class="list-item"><a href="">Create Category</a></li><br>
+                                      <li class="list-item"><a href="">Manage Category</a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card bg-dark">
+                              <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                  Users
+                                </a>
+                              </div>
+                              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="list-item"><a href="">Create User</a></li><br>
+                                        <li class="list-item"><a href="">Manage User</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="card bg-dark">
+                              <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="">
+                                  Privacy & Policy
+                                </a>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                </div><br>
+                <!--End Panel-->
+
+                <!--content  -->
+                <div class="col-md-9">
+                    <main>
+                        <div class="container bg-light">
+                            <h1>DashBoard</h1>
+                        
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <p>Users</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>110</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header bg-success">
+                                            <p>Posts</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>110</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header bg-warning">
+                                            <p>Category</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>110</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <!--End content  -->
+            </div>
+        </div> 
+    </section>
